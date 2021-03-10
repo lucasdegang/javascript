@@ -1,0 +1,32 @@
+O que é JQuery?
+	R: É uma biblioteca de funções javascript que interage com HTML. Com o intuito de simplificar os scripts.
+
+JQuery Sintaxe
+
+	$(selector).action()
+	
+	$ é a definição de acesso JQuery
+	(selector) é a busca ou acesso do campo HTML
+	action() é a ação que será realizada no elemento JQuery
+	
+Exemplo de acessar um campo input e incluir valor, a partir do ID no Javascript puro:
+	var meuId = document.getElementById("meuId");
+	meuId.value = "Nome usuário";
+	
+Exemplo de acessar o mesmo campo input, a partir do JQuery:
+	$("#meuId").val("Nome usuário");
+
+Para acessar um elemento HTML a partir da class
+	$(".minhaClasse").attr();
+	
+Condição para verificar se um elemento HTML possui uma classe
+	if( $("#meuId").hasClass("alterado") ){
+		// comando para quando for true
+	}else{
+		// comando para quando for false
+	}
+
+Consumindo um conteúdo JSON pelo JQuery
+	$.each(json.nomeObjeto, function(index, value){
+		// bloco de código
+	});
